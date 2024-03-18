@@ -1,0 +1,715 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Rejouice-Headline";
+}
+@font-face {
+    font-family: 'NBinter';
+    src: url(./fonts/NBInternationalProBoo.ttf);
+  }
+  @font-face {
+    font-family: 'Rejouice-Headline';
+    src: url(./fonts/Rejouice-Headline.ttf) format('truetype');
+  }
+    
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+.page1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.page1-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 50px 48px;
+}
+.nav-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-con h2{
+    font-weight: 500;
+    font-size: 25.5px;
+    cursor: pointer;
+
+}
+.page1-bottom{
+    display: flex;
+    align-items:end;
+    justify-content:center;
+    gap: 14px;
+}
+.page1-bottom h1{
+    font-size: 52vh;
+    font-weight: 700;
+    position: relative;
+    top: 29vh; 
+}
+.playreel {
+    position: absolute;
+    top: 60vh;
+    /* padding: 7px 20px; */
+    display: none;
+    height: 15vh;
+    width: 25vh;
+    border-radius: 10px;
+    background-color: red;
+}
+.reelplay{
+    display: none;
+    width: 100%;
+    background-color: red;
+}
+.reelplay img{
+    border-radius:10px;
+}
+.playtime{
+    margin: 0 ;
+}
+.scrollicon{
+    display: flex;
+}
+.mousemove{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 22px;
+    opacity: 0;
+    transition: all linear 0.1s;
+}
+
+/* HIDDEN MENU */
+
+.Hiddenmenu{
+    width: 100%;
+    height: 78.5vh;
+    background-color: #FF5F38;
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+    margin-top: -110vh;
+    transition: ease-in 0.5s;
+}
+.menu-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 40px;
+    color: black;
+}
+.menu-con h2{
+    font-size: 35px;
+    font-weight: 400;
+}
+.menu-middle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 35px;
+    color: black;
+    position: relative;
+    top: -5vh;
+    border-bottom: 2px solid black;
+}
+.video-con video{
+    width: 55%;
+    height: 32vh;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px 0;
+}
+.video-con{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.menu-left{
+    width: 40%;
+    
+}
+.menu-left h2{
+    font-size:5.6vh;
+    margin: auto;
+    font-weight: 300;
+
+}
+.menu-left h2:hover{
+    text-decoration: underline;
+    transition: linear 2s;
+}
+.video-con img{
+    width: 20%;
+}
+
+.btn{
+    padding: 20px 40px;
+    background-color: transparent;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition:linear;
+}
+.btn:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+.menu-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-size: 20px;
+    color: black;
+}
+.menu-bottom h4{
+    font-weight: 400;
+}
+
+.margintop{
+    margin-top:-1vh;
+}
+.margintop1{
+    margin-top:-66vh;
+}
+
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    padding: 10vh 0;
+}
+.page2-con{
+    padding: 2vh 0;
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page2-con h2{
+    font-weight: 400;
+    font-family: 'NBinter';
+    font-size: 35px;
+}
+.page-midde{
+    width: 85%;
+    margin: auto;
+    padding: 4.5vh 0;
+}
+.page-midde h4{
+    font-weight: 500;
+    font-size: 8vh;
+    font-family: 'NBinter';
+}
+
+
+.page2-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.page2-top p{
+    margin: 0 10px;
+}
+.page2-top button{
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px 13px;
+    border-radius: 18px;
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+
+/* PAGE 3 */
+
+.page3{
+    width: 100%;
+    height: 50vh;
+}
+
+.page3-con{
+    padding: 5vh;
+    text-align: center;
+    font-size: 44px;
+    line-height: 80px;
+}
+.page3-con h1{
+    font-weight: 400;
+    font-family: 'NBinter';
+}
+
+.page3-middel{
+    padding-top: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.page3-middel h2{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'NBinter';
+}
+
+
+/* PAGE 4 */
+
+.page4{
+    width: 100%;
+    height: 100vh; 
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    width: 90%;
+    margin: auto;
+}
+
+.grid-item {
+    width: 100%;
+    text-align: center;
+}
+.grid-item img{
+    width: 100%;
+}
+.insidevideo{
+    position: absolute;
+}
+.insidevideo video{
+    width: 100%;
+}
+
+
+
+.photo-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.photo-container1 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.photo1 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.logoimg{
+    position: relative;
+    width: 25%;
+    margin: auto;
+    top: -15vh;
+}
+.logoimg img{
+    width: 100%;
+    z-index: 99;
+}
+
+
+
+/* PAGE 5 */
+
+.page5{
+    width: 90%;
+    margin: auto;
+    height: 56vh;
+}
+
+.page5-con{
+    padding-top: 3vh;
+    margin: auto;
+    border-bottom: 1px solid black;
+}
+
+.page5-con h2{
+   font-size: 4.2vh;
+   font-family: 'NBinter';
+   font-weight: 300;
+   margin: 20px;
+}
+
+.page5-middle{
+    font-size: 5.4vh;
+    padding: 2.4vh 0;
+}
+.page5-middle h2{
+    font-family: 'NBinter';
+    font-weight: 400;
+}
+
+
+
+
+/* .page6{
+    width: 100%;
+    height: 100vh;
+}
+.rj{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+   margin: auto;
+}
+.svgcon{
+} */
+
+
+
+/* page7 */
+.page7{
+    width: 100%;
+    margin: auto;
+    font-size: 3.8vh;
+}
+.page7-con{
+    width: 95%;
+    margin: auto;
+    font-weight: 400;
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+.page7con2 h3{
+    font-size: 25px;
+}
+
+.swiper {
+    overflow: hidden;
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 45%;
+  }
+
+  .swiper-slide {
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin: 0 10px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 19.5%;
+    margin: 0 10px;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* page 8 */
+
+.page8{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.page8-con h2{
+    font-size: 40px;
+}
+
+/* page 9 */
+
+.page9{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.page9-con h1{
+    color: aliceblue;
+    font-size: 20vw;
+    overflow: hidden;
+}
+
+
+@media (max-width:600px) {
+    .page1-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 35px 15px;
+    }
+    .page1-bottom{
+       display: none;
+    }
+    .playreel {
+        position: relative;
+        top: 53vh;
+        /* padding: 7px 20px; */
+        height: 15vh;
+        width: 25vh;
+        border-radius: 20px;
+        margin: 0 13px;
+        display: block;
+    }
+    .playtime{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .playreel img{
+        width: 100%;
+        height: 100%;
+    }
+    .reelplay{
+        display: flex;
+        width: 30px;
+        align-items:center;
+        display: block;
+    }
+    .playtime img{
+       width: 10%;
+    }
+    span{
+        font-size: 22px;
+    }
+    .scrool{
+        position: relative;
+        left: 17.4vh;
+    }
+    .fa-thin{
+        font-size: 20px;
+    }
+    .nav-con h2:nth-child(2){
+        font-weight: 400;
+        font-size: 21.5px;
+        border: 2px solid whitesmoke;
+        border-radius: 20px;
+        padding: 6px 20px;
+    }
+    .mousemove{
+        display: none;
+    }
+    .menu-con h2{
+        font-size: 25px;
+    }
+    .Hiddenmenu{
+        height: 100vh;
+        transition: all linear 0.8s;
+    }
+    .video-con{
+        display: none;
+    }
+    .menu-left{
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        top: 80px;
+    }
+    .menu-left h2{
+        font-size: 50px;
+    }
+    .menu-bottom{
+        width: 100%;
+        align-items: center;
+    }
+
+    .page2-con h2{
+        font-size: 17px;
+    }
+    .page2{
+        padding: 6.5vh 0;
+    }
+    .page-midde h4{
+        font-size: 3vh;
+        /* text-align: center; */
+    }
+    .page2-top{
+        /* position: relative; */
+        font-size: 18px;
+        /* top: -30vh; */
+    }
+    .page2{
+        height: 70vh;
+    }
+    .page3-con{
+        font-size: 28px;
+        font-weight: 200;
+        line-height: 6.3vh;
+        padding: 8vh 0;
+        /* position: relative;
+        top: -30vh; */
+        
+    }
+    .page3-middel h2{
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'NBinter';
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .grid-item {
+        width: 100%;
+        text-align: center;
+    }
+    .page5{
+        position: relative;
+        top: 70vh;
+        width: 90%;
+        margin: auto;
+        height: 70vh;
+    }
+    .page5-con h2{
+        font-size: 20px;
+    }
+    .page5-middle {
+        font-size: 20px;
+        padding: 2.4vh 1vh;
+        text-align: center;
+    }
+    .page7{
+        width: 95%;
+        position: relative;
+        top: 42vh;
+        font-size: 3.8vh;
+    }
+    .page7con2 h3{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .page7-con h2{
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 25%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
+        box-sizing: content-box;
+    }
+    .swiper {
+        position: relative;
+        top: -17px;
+        width: 200%;
+        height: 86%;
+        animation-name: moveLeftToRight;
+    }
+    .page8{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .page9{
+        width: 100%;
+        height: 40vh;
+        background-color: black;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .page7{
+        width: 100%;
+        margin: auto;
+        font-size: 3.8vh;
+        overflow: hidden;
+    }
+}
+
